@@ -23,6 +23,7 @@ def find_paths(node, cities, path, distance):
         routes.append([distance, path])
         return
 
+    
     # create paths for all possible cities not yet used
     for city in cities:
         if (city not in path) and (cities[city].has_key(node)):
